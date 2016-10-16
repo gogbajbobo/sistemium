@@ -1,0 +1,17 @@
+{
+  "name": "sistemium.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "sistemium-angular": "^0.7.2",
+    "sistemium-angular-bootstrap": ">=0.3.6"
+  },
+  "devDependencies": {
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}

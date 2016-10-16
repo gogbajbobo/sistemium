@@ -1,0 +1,15 @@
+{
+  "name": "webPage",
+  "version": "0.0.1",
+  "description": "Sistemium webpage",
+  "dependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "sistemium-gulp": ">=0.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
