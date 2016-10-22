@@ -12,29 +12,6 @@
   padding: 0.2em 0;
 }
 
-tr:focus {
-  outline-style: none;
-}
-
-body {
-  //padding-top: 20px;
-  //margin-bottom: 50px;
-}
-
-.domain-ui-view {
-  h2 .lead {
-    margin-bottom: 15px;
-  }
-
-  h3 .lead {
-    margin-bottom: 10px;
-  }
-}
-
-.clear-both {
-  clear: both;
-}
-
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

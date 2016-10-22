@@ -1,0 +1,32 @@
+div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+    header(class="mdl-layout__header")
+        div(class="mdl-layout__header-row")
+            span(class="mdl-layout-title") {{vm.title}}
+            div(class="mdl-layout-spacer")
+            nav(class="mdl-navigation mdl-layout--large-screen-only")
+                a(
+                ng-repeat='section in vm.sections'
+                class="mdl-navigation__link"
+                href
+                ) {{section}}
+            button(
+            id="lang-menu-button"
+            class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            ) {{vm.currentLang}}
+            ul(
+            class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+            for="lang-menu-button"
+            )
+                li(
+                ng-repeat='lang in vm.langs'
+                class="mdl-menu__item"
+                ng-disabled='lang == vm.currentLang'
+                ) {{lang}}
+    div(class="mdl-layout__drawer")
+        span(class="mdl-layout-title") {{vm.title}}
+        nav(class="mdl-navigation")
+            a(
+            ng-repeat='section in vm.sections'
+            class="mdl-navigation__link"
+            href
+            ) {{section}}
