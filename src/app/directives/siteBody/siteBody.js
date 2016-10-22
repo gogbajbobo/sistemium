@@ -40,6 +40,7 @@
                     name: 'Mr. John Doe',
                     position: 'Mr. John Doe — the Boss of the Company',
                     photoUrl: '',
+                    buttonName: 'sentiment_neutral',
                     shortDescription: 'Boss',
                     descriptionUrl: ''
                 },
@@ -47,6 +48,7 @@
                     name: 'John Doe Sr.',
                     position: 'John Doe Sr. — senior developer of the Company',
                     photoUrl: '',
+                    buttonName: 'person',
                     shortDescription: 'Senior developer',
                     descriptionUrl: ''
                 },
@@ -54,6 +56,7 @@
                     name: 'John Doe Jr.',
                     position: 'John Doe Jr. — junior developer of the Company',
                     photoUrl: '',
+                    buttonName: 'perm_identity',
                     shortDescription: 'Junior developer',
                     descriptionUrl: ''
                 },
@@ -61,6 +64,7 @@
                     name: 'John D. Tester',
                     position: 'John D. Tester — tester of the Company',
                     photoUrl: '',
+                    buttonName: 'sentiment_dissatisfied',
                     shortDescription: 'Tester',
                     descriptionUrl: ''
                 },
@@ -68,6 +72,7 @@
                     name: 'Jane Doe',
                     position: 'Jane Doe — designer of the Company',
                     photoUrl: '',
+                    buttonName: 'mood',
                     shortDescription: 'Designer',
                     descriptionUrl: ''
                 },
@@ -75,6 +80,7 @@
                     name: 'Jane Doe Second',
                     position: 'Jane Doe Second — office manager of the Company',
                     photoUrl: '',
+                    buttonName: 'sentiment_satisfied',
                     shortDescription: 'Office manager',
                     descriptionUrl: ''
                 }
