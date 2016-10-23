@@ -35,6 +35,7 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
 
     main(class="mdl-layout__content")
         div(class="mdl-grid")
+
             div(class="stm-about-card mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp")
                 div(class="mdl-card__title")
                     h2(class="mdl-card__title-text") About
@@ -47,9 +48,23 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
             )
                 div(class="mdl-card__title")
                     h2(class="mdl-card__title-text") {{staffDatum.name}}
-                div(class="mdl-card__supporting-text") {{staffDatum.position}}
+                div(class='mdl-grid')
+                    div(class="mdl-card__supporting-text mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone") {{staffDatum.position}}
+                    div(class='stm-mdl-card__image mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone')
+                        img(
+                        src="{{staffDatum.photoUrl}}"
+                        height="128"
+                        width="128"
+                        )
                 div(class="mdl-card__actions mdl-card--border")
                     a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") {{staffDatum.shortDescription}}
-                div(class="mdl-card__menu")
-                    button(class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect")
-                        i(class="material-icons") {{staffDatum.buttonName}}
+
+            div(
+            ng-repeat='project in vm.projectData'
+            class="stm-about-card mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp"
+            )
+                div(class="mdl-card__title")
+                    h2(class="mdl-card__title-text") {{project.name}}
+                div(class="mdl-card__supporting-text mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone") {{staffDatum.position}}
+                div(class="mdl-card__actions mdl-card--border")
+                    a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") {{staffDatum.shortDescription}}
