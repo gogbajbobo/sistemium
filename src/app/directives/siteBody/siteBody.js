@@ -94,27 +94,31 @@
             return [
                 {
                     name: 'iSistemium',
-                    imageUrl: 'images/boss.png',
+                    imageUrl: 'images/isistemium.png',
                     shortDescription: 'iSistemium',
-                    descriptionUrl: ''
+                    descriptionUrl: '',
+                    bgColor: 'rgb(248,248,248)'
                 },
                 {
                     name: 'Debtee',
-                    imageUrl: 'images/boss.png',
+                    imageUrl: 'images/debtee.png',
                     shortDescription: 'Debtee',
-                    descriptionUrl: ''
+                    descriptionUrl: '',
+                    bgColor: 'rgb(70,145,206)'
                 },
                 {
                     name: 'Vseramki',
-                    imageUrl: 'images/boss.png',
+                    imageUrl: 'images/vseramki.png',
                     shortDescription: 'Vseramki',
-                    descriptionUrl: ''
+                    descriptionUrl: '',
+                    bgColor: 'rgb(242,244,246)'
                 },
                 {
                     name: 'Kirtis',
-                    imageUrl: 'images/boss.png',
+                    imageUrl: 'images/kirtis.png',
                     shortDescription: 'Kirtis',
-                    descriptionUrl: ''
+                    descriptionUrl: '',
+                    bgColor: 'rgb(64,85,179)'
                 }
             ];
 
