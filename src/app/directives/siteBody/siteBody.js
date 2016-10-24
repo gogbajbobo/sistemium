@@ -1,11 +1,6 @@
 (function() {
     'use strict';
 
-    angular
-        .module('webPage')
-        .directive('sitebody', sitebody)
-        .controller('sitebodyController', sitebodyController);
-
     function sitebody() {
         return {
 
@@ -125,5 +120,10 @@
         }
 
     }
+
+    angular
+        .module('webPage')
+        .directive('sitebody', sitebody)
+        .controller('sitebodyController', sitebodyController);
 
 })();

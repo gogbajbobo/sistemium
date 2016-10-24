@@ -15,8 +15,8 @@
             },
             controller: 'navbarController',
             controllerAs: 'vm',
-            bindToController: true,
-            replace: true
+            bindToController: true/*,
+            replace: true*/
 
         };
     }

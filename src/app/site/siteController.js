@@ -2,11 +2,17 @@
 
 (function () {
 
-    angular.module('webPage').controller('SiteController', function () {
+    function siteController() {
 
         var vm = this;
-        vm.cls = 'siteBody';
 
-    });
+        _.extend(vm, {
+            cls: 'siteBody'
+        });
+
+    }
+
+    angular.module('webPage')
+        .controller('SiteController', siteController);
 
 })();
