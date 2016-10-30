@@ -1,0 +1,12 @@
+main(class="mdl-layout__content")
+    div(class="mdl-grid")
+       div(
+        ng-repeat='project in vm.projectsData'
+        class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp"
+        )
+            div(
+            class="stm-mdl-projectcard__title mdl-card__title"
+            ng-style="{'background-image': 'url(' + project.imageUrl + ')', 'background-color': project.bgColor}"
+            )
+            div(class="mdl-card__actions mdl-card--border")
+                a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") {{project.shortDescription}}

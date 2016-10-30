@@ -20,6 +20,13 @@
                     templateUrl: 'app/site/views/staff.html',
                     controller: 'StaffController',
                     controllerAs: 'vm'
+                })
+                .state({
+                    name: 'projects',
+                    url: '/projects',
+                    templateUrl: 'app/site/views/projects.html',
+                    controller: 'ProjectsController',
+                    controllerAs: 'vm'
                 });
 
         });
