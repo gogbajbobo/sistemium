@@ -15,19 +15,29 @@
             },
             controller: 'navbarController',
             controllerAs: 'vm',
-            bindToController: true/*,
-            replace: true*/
+            bindToController: true
 
         };
     }
 
-    function navbarController() {
+    function navbarController($state) {
 
         var vm = this;
 
-        _.extend(vm, {
+        _.assign(vm, {
+
+            title: 'Sistemium',
+            currentLang: 'RU',
+            langs: ['LT', 'RU', 'EN'],
+            sections: ['About', 'Staff', 'Projects', 'Technologies'],
+
+            selectSection
 
         });
+
+        function selectSection(section) {
+            $state.go(_.lowerCase(section));
+        }
 
     }
 

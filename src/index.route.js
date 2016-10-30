@@ -8,11 +8,10 @@
     function routerConfig($stateProvider, $urlRouterProvider) {
 
         $stateProvider
-            .state('home', {
+            .state({
+                name: 'home',
                 url: '/',
-                templateUrl: 'app/site/views/about.html'/*,
-                controller: 'MainController',
-                controllerAs: 'vm'*/
+                templateUrl: 'app/site/views/about.html'
             });
 
         $urlRouterProvider.otherwise('/');
