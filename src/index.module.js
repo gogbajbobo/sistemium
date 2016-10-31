@@ -6,15 +6,28 @@
             'ui.router',
             'ui.router.stateHelper',
             'sistemiumBootstrap'
-        ])/*
-        .run(($rootScope, $timeout) => {
-
-            $rootScope.$on('$viewContentLoaded', ()=> {
-                $timeout(() => {
-                    componentHandler.upgradeAllRegistered();
-                })
-            })
-
-        })*/;
+        ])
+        //.run(($rootScope, $timeout, $window) => {
+        //
+        //    $rootScope.$on('$stateChangeSuccess', ()=> {
+        //        $timeout(() => {
+        //            $window.componentHandler.upgradeAllRegistered();
+        //        })
+        //    });
+        //
+        //    $rootScope.$on('$viewContentLoading', () => {
+        //        $timeout(() => {
+        //            $window.componentHandler.upgradeAllRegistered();
+        //        })
+        //    });
+        //
+        //    $rootScope.$on('$viewContentLoaded', () => {
+        //        $timeout(() => {
+        //            $window.componentHandler.upgradeAllRegistered();
+        //        })
+        //    });
+        //
+        //})
+    ;
 
 })();
