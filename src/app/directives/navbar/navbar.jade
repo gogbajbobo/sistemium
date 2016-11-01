@@ -1,4 +1,4 @@
-div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header stm-navbar")
 
     header(class="mdl-layout__header")
         div(class="mdl-layout__header-row")
@@ -7,7 +7,7 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
             nav(class="mdl-navigation mdl-layout--large-screen-only")
                 a(
                 ng-repeat='section in vm.sections'
-                ng-click='vm.selectSection(section)'
+                ng-click='vm.selectSectionInHeader(section)'
                 class="mdl-navigation__link"
                 href
                 ) {{section}}
@@ -29,7 +29,7 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
         nav(class="mdl-navigation")
             a(
             ng-repeat='section in vm.sections'
-            ng-click='vm.selectSection(section)'
+            ng-click='vm.selectSectionInDrawer(section)'
             class="mdl-navigation__link"
             href
             ) {{section}}

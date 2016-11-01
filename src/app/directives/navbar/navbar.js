@@ -31,9 +31,23 @@
             langs: ['LT', 'RU', 'EN'],
             sections: ['About', 'Staff', 'Projects', 'Technologies'],
 
-            selectSection
+            selectSectionInHeader,
+            selectSectionInDrawer
 
         });
+
+        function selectSectionInHeader(section) {
+            selectSection(section);
+        }
+
+        function selectSectionInDrawer(section) {
+
+            var navbar = document.querySelector('.stm-navbar');
+            navbar.MaterialLayout.toggleDrawer();
+
+            selectSection(section);
+
+        }
 
         function selectSection(section) {
             $state.go(_.lowerCase(section));
