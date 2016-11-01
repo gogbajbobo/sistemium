@@ -1,18 +1,19 @@
-main(class="mdl-layout__content")
-    div(class="mdl-grid")
-        div(
-        ng-repeat='staffDatum in vm.staffData'
-        class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp"
-        )
-            div(class="mdl-card__title")
-                h2(class="mdl-card__title-text") {{staffDatum.name}}
-            div(class='mdl-grid')
-                div(class="mdl-card__supporting-text mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone") {{staffDatum.position}}
-                div(class='stm-mdl-staffcard__image mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone')
-                    img(
-                    ng-src="{{staffDatum.photoUrl}}"
-                    height="128"
-                    width="128"
-                    )
-            div(class="mdl-card__actions mdl-card--border")
-                a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") {{staffDatum.shortDescription}}
+div(class="mdl-layout mdl-js-layout")
+    main(class="mdl-layout__content")
+        div(class="mdl-grid")
+            div(
+            ng-repeat='staffDatum in vm.staffData'
+            class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp"
+            )
+                div(class="mdl-card__title")
+                    h2(class="mdl-card__title-text") {{staffDatum.name}}
+                div(class='mdl-grid')
+                    div(class="mdl-card__supporting-text mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone") {{staffDatum.position}}
+                    div(class='stm-mdl-staffcard__image mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone')
+                        img(
+                        ng-src="{{staffDatum.photoUrl}}"
+                        height="128"
+                        width="128"
+                        )
+                div(class="mdl-card__actions mdl-card--border")
+                    a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") {{staffDatum.shortDescription}}
