@@ -5,7 +5,8 @@
     "sistemium-angular": "^0.7.2",
     "sistemium-angular-bootstrap": ">=0.3.6",
     "material-design-lite": "^1.2.1",
-    "angular-route": "^1.4.0"
+    "angular-route": "^1.4.0",
+    "angular-gettext": "^2.3.0"
   },
   "devDependencies": {
   },

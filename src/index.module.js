@@ -5,7 +5,8 @@
         .module('webPage', [
             'ui.router',
             'ui.router.stateHelper',
-            'sistemiumBootstrap'
+            'sistemiumBootstrap',
+            'gettext'
         ])
         //.run(($rootScope, $timeout, $window) => {
         //
