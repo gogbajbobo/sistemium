@@ -6,9 +6,19 @@
             'ui.router',
             'ui.router.stateHelper',
             'sistemiumBootstrap',
-            'gettext'
+            'gettext',
+            'ngStorage'
         ])
-        //.run(($rootScope, $timeout, $window) => {
+        .run(function (gettextCatalog, $localStorage) {
+
+            gettextCatalog.debug = true;
+
+            var lang = $localStorage.currentLanguage || 'en';
+            gettextCatalog.setCurrentLanguage(lang);
+
+        });
+
+    //.run(($rootScope, $timeout, $window) => {
         //
         //    $rootScope.$on('$stateChangeSuccess', ()=> {
         //        $timeout(() => {
@@ -29,6 +39,6 @@
         //    });
         //
         //})
-    ;
+    //;
 
 })();
