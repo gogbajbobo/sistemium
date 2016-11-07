@@ -20,7 +20,7 @@
         };
     }
 
-    function navbarController($state, gettextCatalog, $localStorage) {
+    function navbarController($state, gettextCatalog, $localStorage, $timeout) {
 
         var vm = this;
 
@@ -48,12 +48,16 @@
 
         function setCurrentLang(lang) {
 
-            if (vm.langs.indexOf(lang) != -1) {
+            $timeout(() => {
 
-                $localStorage.currentLanguage = lang;
-                gettextCatalog.setCurrentLanguage(lang);
+                if (vm.langs.indexOf(lang) != -1) {
 
-            }
+                    $localStorage.currentLanguage = lang;
+                    gettextCatalog.setCurrentLanguage(lang);
+
+                }
+
+            });
 
         }
 
