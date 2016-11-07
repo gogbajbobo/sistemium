@@ -4,15 +4,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
-#: app/site/views/test.html:8
-msgid "TEST 3"
+#: app/site/views/about.html:7
+msgid "About"
 msgstr ""
 
-#: index.html:37
-#: index.html:39
-msgid "TEST TRANSLATE"
+#: app/site/views/projects.html:7
+msgid "Projects"
 msgstr ""
 
-#: index.html:38
-msgid "TEST TRANSLATE 2"
+#: app/site/views/about.html:9
+msgid "Some info about Sistemium company."
+msgstr ""
+
+#: app/site/views/staff.html:7
+msgid "Staff"
+msgstr ""
+
+#: app/site/views/technologies.html:7
+msgid "Technologies"
 msgstr ""

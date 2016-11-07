@@ -8,8 +8,9 @@
                 a.mdl-navigation__link(
                 ng-repeat='section in vm.sections'
                 ng-click='vm.selectSectionInHeader(section)'
+                ng-bind='section | translate'
                 href
-                ) {{section}}
+                )
             button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored(
             id="lang-menu-button"
             ) {{vm.currentLang()}}
@@ -27,7 +28,8 @@
             a.mdl-navigation__link(
             ng-repeat='section in vm.sections'
             ng-click='vm.selectSectionInDrawer(section)'
+            ng-bind='section | translate'
             href
-            ) {{section}}
+            )
 
     div(ui-view)

@@ -20,14 +20,14 @@ msgstr "About"
 msgid "Some info about Sistemium company."
 msgstr "Some info about Sistemium company."
 
-#: app/site/views/test.html:8
-msgid "TEST 3"
-msgstr "Test 3"
+#: app/site/views/projects.html:7
+msgid "Projects"
+msgstr "Projects"
 
-#: index.html:37 index.html:40
-msgid "TEST TRANSLATE"
-msgstr "Test"
+#: app/site/views/staff.html:7
+msgid "Staff"
+msgstr "Staff"
 
-#: index.html:38 index.html:41
-msgid "TEST TRANSLATE 2"
-msgstr "Test 2"
+#: app/site/views/technologies.html:7
+msgid "Technologies"
+msgstr "Technologies"

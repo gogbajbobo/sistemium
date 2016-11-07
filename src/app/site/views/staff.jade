@@ -1,6 +1,9 @@
 .mdl-layout.mdl-js-layout
     main.mdl-layout__content
         .mdl-grid
+            .mdl-card.mdl-cell.mdl-cell--12-col.mdl-cell--8-col-tablet.mdl-cell--4-col-phone.mdl-shadow--2dp
+                .mdl-card__title
+                    h2.mdl-card__title-text(translate) Staff
             .mdl-card.mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone.mdl-shadow--2dp(
             ng-repeat='staffDatum in vm.staffData'
             )

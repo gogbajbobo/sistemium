@@ -20,14 +20,14 @@ msgstr "Apie"
 msgid "Some info about Sistemium company."
 msgstr "Kai informacijos apie Sistemium bendrovė."
 
-#: app/site/views/test.html:8
-msgid "TEST 3"
-msgstr "Testas 3"
+#: app/site/views/projects.html:7
+msgid "Projects"
+msgstr "Projektai"
 
-#: index.html:37 index.html:40
-msgid "TEST TRANSLATE"
-msgstr "Testas"
+#: app/site/views/staff.html:7
+msgid "Staff"
+msgstr "Personalas"
 
-#: index.html:38 index.html:41
-msgid "TEST TRANSLATE 2"
-msgstr "Testas 2"
+#: app/site/views/technologies.html:7
+msgid "Technologies"
+msgstr "Technologijos"
