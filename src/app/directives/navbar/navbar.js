@@ -20,21 +20,42 @@
         };
     }
 
-    function navbarController($state) {
+    function navbarController($state, gettextCatalog, $localStorage) {
 
         var vm = this;
 
         _.assign(vm, {
 
             title: 'Sistemium',
-            currentLang: 'RU',
-            langs: ['LT', 'RU', 'EN'],
+            langs: ['lt', 'ru', 'en'],
             sections: ['About', 'Staff', 'Projects', 'Technologies'],
 
+            currentLang,
+            setCurrentLang,
             selectSectionInHeader,
             selectSectionInDrawer
 
         });
+
+        function currentLang() {
+
+            var lang = $localStorage.currentLanguage || 'en';
+            gettextCatalog.setCurrentLanguage(lang);
+
+            return lang;
+
+        }
+
+        function setCurrentLang(lang) {
+
+            if (vm.langs.indexOf(lang) != -1) {
+
+                $localStorage.currentLanguage = lang;
+                gettextCatalog.setCurrentLanguage(lang);
+
+            }
+
+        }
 
         function selectSectionInHeader(section) {
             selectSection(section);

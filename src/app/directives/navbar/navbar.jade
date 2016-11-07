@@ -14,7 +14,7 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header stm-navbar")
             button(
             id="lang-menu-button"
             class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
-            ) {{vm.currentLang}}
+            ) {{vm.currentLang()}}
             ul(
             class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
             for="lang-menu-button"
@@ -22,8 +22,9 @@ div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header stm-navbar")
                 li(
                 ng-repeat='lang in vm.langs'
                 class="mdl-menu__item"
-                ng-disabled='lang == vm.currentLang'
-                ) {{lang}}
+                ng-disabled='lang == vm.currentLang()'
+                ng-click='vm.setCurrentLang(lang)'
+                ) {{lang | uppercase}}
     div(class="mdl-layout__drawer")
         span(class="mdl-layout-title") {{vm.title}}
         nav(class="mdl-navigation")
