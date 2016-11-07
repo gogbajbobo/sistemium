@@ -1,37 +1,32 @@
-div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header stm-navbar")
+.mdl-layout.mdl-js-layout.mdl-layout--fixed-header.stm-navbar
 
-    header(class="mdl-layout__header")
-        div(class="mdl-layout__header-row")
-            span(class="mdl-layout-title") {{vm.title}}
-            div(class="mdl-layout-spacer")
-            nav(class="mdl-navigation mdl-layout--large-screen-only")
-                a(
+    header.mdl-layout__header
+        .mdl-layout__header-row
+            span.mdl-layout-title {{vm.title}}
+            .mdl-layout-spacer
+            nav.mdl-navigation.mdl-layout--large-screen-only
+                a.mdl-navigation__link(
                 ng-repeat='section in vm.sections'
                 ng-click='vm.selectSectionInHeader(section)'
-                class="mdl-navigation__link"
                 href
                 ) {{section}}
-            button(
+            button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored(
             id="lang-menu-button"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
             ) {{vm.currentLang()}}
-            ul(
-            class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+            ul.mdl-menu.mdl-menu--bottom-right.mdl-js-menu.mdl-js-ripple-effect(
             for="lang-menu-button"
             )
-                li(
+                li.mdl-menu__item(
                 ng-repeat='lang in vm.langs'
-                class="mdl-menu__item"
                 ng-disabled='lang == vm.currentLang()'
                 ng-click='vm.setCurrentLang(lang)'
                 ) {{lang | uppercase}}
-    div(class="mdl-layout__drawer")
-        span(class="mdl-layout-title") {{vm.title}}
-        nav(class="mdl-navigation")
-            a(
+    .mdl-layout__drawer
+        span.mdl-layout-title {{vm.title}}
+        nav.mdl-navigation
+            a.mdl-navigation__link(
             ng-repeat='section in vm.sections'
             ng-click='vm.selectSectionInDrawer(section)'
-            class="mdl-navigation__link"
             href
             ) {{section}}
 
