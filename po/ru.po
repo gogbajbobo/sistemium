@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+
+#: app/site/views/about.html:7
+msgid "About"
+msgstr "О компании"
+
+#: app/site/views/about.html:9
+msgid "Some info about Sistemium company."
+msgstr "Информация о компании Sistemium"
+
+#: app/site/views/test.html:8
+msgid "TEST 3"
+msgstr "Тест 3"
+
+#: index.html:37 index.html:40
+msgid "TEST TRANSLATE"
+msgstr "Тест"
+
+#: index.html:38 index.html:41
+msgid "TEST TRANSLATE 2"
+msgstr "Тест 2"

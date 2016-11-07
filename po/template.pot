@@ -9,6 +9,7 @@ msgid "TEST 3"
 msgstr ""
 
 #: index.html:37
+#: index.html:39
 msgid "TEST TRANSLATE"
 msgstr ""
 
