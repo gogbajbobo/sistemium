@@ -12,22 +12,48 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Language: lt\n"
 
-#: app/site/views/about.html:7
+#: app/site/views/about.html:4
 msgid "About"
 msgstr "Apie"
 
-#: app/site/views/about.html:9
-msgid "Some info about Sistemium company."
-msgstr "Kai informacijos apie Sistemium bendrovė."
+#: app/site/views/about.html:16
+msgid "Address and Map"
+msgstr "Adresas ir žemėlapis"
 
-#: app/site/views/projects.html:7
+#: app/site/views/about.html:12
+msgid "Contacts"
+msgstr "Kontaktai"
+
+#: app/site/views/about.html:8
+msgid "History"
+msgstr "Istorija"
+
+#: app/site/views/technologies.html:8
+msgid "List of used technologies"
+msgstr "Naudojamos technologijos"
+
+#: app/site/views/projects.html:4
 msgid "Projects"
 msgstr "Projektai"
 
-#: app/site/views/staff.html:7
+#: app/site/views/about.html:18
+msgid "Sistemium address and map."
+msgstr "Įmonės adresas ir žemėlapis."
+
+#: app/site/views/about.html:14
+msgid "Sistemium contacts."
+msgstr "Kontaktinė informacija."
+
+#: app/site/views/about.html:10
+msgid "Some info about Sistemium company."
+msgstr "Kai informacijos apie Sistemium bendrovė."
+
+#: app/site/views/staff.html:4
 msgid "Staff"
 msgstr "Personalas"
 
-#: app/site/views/technologies.html:7
+#: app/site/views/technologies.html:4
 msgid "Technologies"
 msgstr "Technologijos"
+
+

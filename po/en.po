@@ -12,22 +12,46 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: en\n"
 
-#: app/site/views/about.html:7
+#: app/site/views/about.html:4
 msgid "About"
 msgstr "About"
 
-#: app/site/views/about.html:9
-msgid "Some info about Sistemium company."
-msgstr "Some info about Sistemium company."
+#: app/site/views/about.html:16
+msgid "Address and Map"
+msgstr "Address and Map"
 
-#: app/site/views/projects.html:7
+#: app/site/views/about.html:12
+msgid "Contacts"
+msgstr "Contacts"
+
+#: app/site/views/about.html:8
+msgid "History"
+msgstr "History"
+
+#: app/site/views/technologies.html:8
+msgid "List of used technologies"
+msgstr "List of used technologies"
+
+#: app/site/views/projects.html:4
 msgid "Projects"
 msgstr "Projects"
 
-#: app/site/views/staff.html:7
+#: app/site/views/about.html:18
+msgid "Sistemium address and map."
+msgstr "Sistemium address and map."
+
+#: app/site/views/about.html:14
+msgid "Sistemium contacts."
+msgstr "Sistemium contacts."
+
+#: app/site/views/about.html:10
+msgid "Some info about Sistemium company."
+msgstr "Some info about Sistemium company."
+
+#: app/site/views/staff.html:4
 msgid "Staff"
 msgstr "Staff"
 
-#: app/site/views/technologies.html:7
+#: app/site/views/technologies.html:4
 msgid "Technologies"
 msgstr "Technologies"
